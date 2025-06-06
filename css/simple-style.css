@@ -1,0 +1,22 @@
+html , body {
+  height: 100%;
+}
+
+a.member.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: unset;
+  right: 5px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer .footer-info li::before {
+  content: "-";
+  font-weight: bold;
+}
+
