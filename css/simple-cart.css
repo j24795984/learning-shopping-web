@@ -14,11 +14,27 @@
     width: calc((100% - 50px) - 10px);
 }
 
+
 .quantity-amount {
     width: 150px;
     height: 36px;
 }
 
-.amount-box li {
-  list-style-type: none;
+@media (max-width:576px) {
+    .quantity-amount {
+        width: 100%;
+        height: 36px;
+    }
+}
+
+.amount-box li , .send-info li {
+    list-style-type: none;
+}
+
+.info-text-box {
+    min-width: 180px;
+}
+
+.info-title {
+    width: 80px;
 }

@@ -80,7 +80,7 @@
                   1
                 </div>
                 <div class="progress rounded-5 progress-w position-absolute top-50 start-100 translate-middle">
-                  <div class="progress-bar bg-success" style="width: 50%"></div>
+                  <div class="progress-bar bg-success" style="width: 100%"></div>
                 </div>
               </div>
 
@@ -92,15 +92,15 @@
             <div class="col p-0">
               <div class="num-box position-relative mb-3">
                 <div
-                  class="num-circle m-auto rounded-5 border border-2 border-secondary-subtle opacity-50 text-secondary fs-4 lh-lg text-center">
+                  class="num-circle m-auto rounded-5 border border-2 border-success text-bg-success fs-4 lh-lg text-center">
                   2</div>
                 <div class="progress rounded-5 progress-w position-absolute top-50 start-100 translate-middle">
-                  <div class="progress-bar bg-success" style="width: 0%"></div>
+                  <div class="progress-bar bg-success" style="width: 50%"></div>
                 </div>
               </div>
 
               <div class="text-box text-center">
-                <p class="d-inline text-secondary text-opacity-50 px-2 m-auto" style="width: 146px;">選擇付款與運送方式</p>
+                <p class="d-inline text-success m-auto " style="width: 146px;">選擇付款與運送方式</p>
               </div>
             </div>
             <!-- 3 -->
@@ -134,144 +134,56 @@
         </div>
         <hr class="border-secondary">
 
-        <!-- 訂單明細 -->
+        <!-- 付款方式 -->
         <div class="w-100 px-3">
-          <h2 class="h4 fw-bolder text-secondary ">訂單明細</h2>
+          <h2 class="h4 fw-bolder text-secondary ">付款方式</h2>
 
-          <div class="w-100 pt-2">
-            <!-- 第一項 -->
-            <div class="w-100 px-0 py-2 p-md-4 d-flex flex-column flex-sm-row justify-content-end row-gap-3">
-              <!-- 項目 -->
-              <div class="d-flex flex-grow-1 flex-column flex-sm-row align-items-center">
-                <!-- 項目圖片 -->
-                <div class="cart-img-box rounded-circle flex-shrink-0">
-                  <img src="./img/cart-img/LrLL14d.jpg" class="w-100 img-fluid card-img-top" alt="">
-                </div>
-                <!-- 項目內容 -->
-                <div class="info-text-box flex-grow-1 me-2 me-lg-5 p-2 text-center text-sm-start">
-                  <h5 class="card-title mb-2 fs-5">委託-角色單圖</h5>
-                  <p class="card-text m-0 pb-1 d-inline-flex text-secondary"># 123456</p>
-                </div>
-              </div>
-
-              <!-- 計算區 -->
-              <div class="quantity-box d-flex align-items-between align-items-sm-center flex-column flex-sm-row column-gap-4 row-gap-3">
-                <!-- 數量增減 -->
-                <div class="quantity-amount input-group">
-                  <button class="btn" type="button">
-                    <i class="bi bi-dash"></i>
-                  </button>
-                  <input type="text" class="form-control text-end" placeholder="" value="1">
-                  <button class="btn" type="button"><i class="bi bi-plus"></i></button>
-                </div>
-                <!-- 總金額 -->
-                <div class="d-flex text-secondary justify-content-between fs-4">
-                  <p class="inline-block m-0 me-2">$</p>
-                  <p class="inline-block m-0 ">1,800</p>
-                </div>
-              </div>
+          <div class="w-100 p-2 p-sm-4">
+            <div class="form-check py-3">
+              <input class="form-check-input" type="radio" name="radioPay" id="radioPay1" required>
+              <label class="form-check-label" for="radioPay1">
+                信用卡
+              </label>
             </div>
             <hr class="border-secondary">
 
-            <!-- 第二項 -->
-            <div class="w-100 px-0 py-2 p-md-4 d-flex flex-column flex-sm-row justify-content-end row-gap-3">
-              <!-- 項目 -->
-              <div class="d-flex flex-grow-1 flex-column flex-sm-row align-items-center">
-                <!-- 項目圖片 -->
-                <div class="cart-img-box rounded-circle flex-shrink-0">
-                  <img src="./img/cart-img/media (1).jpg" class="w-100 img-fluid card-img-top" alt="">
-                </div>
-                <!-- 項目內容 -->
-                <div class="info-text-box flex-grow-1 me-2 me-lg-5 p-2 text-center text-sm-start">
-                  <h5 class="card-title mb-2 fs-5">委託-情境插畫</h5>
-                  <p class="card-text m-0 pb-1 d-inline-flex text-secondary"># 22346</p>
-                </div>
-              </div>
-
-              <!-- 計算區 -->
-              <div class="quantity-box d-flex align-items-between align-items-sm-center  flex-column flex-sm-row column-gap-4 row-gap-3">
-                <!-- 數量增減 -->
-                <div class="quantity-amount input-group">
-                  <button class="btn" type="button">
-                    <i class="bi bi-dash"></i>
-                  </button>
-                  <input type="text" class="form-control text-end" placeholder="" value="1">
-                  <button class="btn" type="button"><i class="bi bi-plus"></i></button>
-                </div>
-                <!-- 總金額 -->
-                <div class="d-flex text-secondary justify-content-between fs-4">
-                  <p class="inline-block m-0 me-2">$</p>
-                  <p class="inline-block m-0 ">2,500</p>
-                </div>
-              </div>
+            <div class="form-check py-3">
+              <input class="form-check-input" type="radio" name="radioPay" id="radioPay2">
+              <label class="form-check-label" for="radioPay2">
+                網路ATM
+              </label>
             </div>
             <hr class="border-secondary">
 
-            <!-- 第三項 -->
-            <div class="w-100 px-0 py-2 p-md-4 d-flex flex-column flex-sm-row justify-content-end row-gap-3">
-              <!-- 項目 -->
-              <div class="d-flex flex-grow-1 flex-column flex-sm-row align-items-center">
-                <!-- 項目圖片 -->
-                <div class="cart-img-box rounded-circle flex-shrink-0">
-                  <img src="./img/cart-img/media.jpg" class="w-100 img-fluid card-img-top" alt="">
-                </div>
-                <!-- 項目內容 -->
-                <div class="info-text-box flex-grow-1 me-2 me-lg-5 p-2 text-center text-sm-start">
-                  <h5 class="card-title mb-2 fs-5">名片設計-海報設計</h5>
-                  <p class="card-text m-0 pb-1 d-inline-flex text-secondary"># 323456</p>
-                </div>
-              </div>
+            <div class="form-check py-3">
+              <input class="form-check-input" type="radio" name="radioPay" id="radioPay3">
+              <label class="form-check-label" for="radioPay3">
+                超商代碼
+              </label>
+            </div>
+          </div>
 
-              <!-- 計算區 -->
-              <div class="quantity-box d-flex align-items-between align-items-sm-center  flex-column flex-sm-row column-gap-4 row-gap-3">
-                <!-- 數量增減 -->
-                <div class="quantity-amount input-group">
-                  <button class="btn" type="button">
-                    <i class="bi bi-dash"></i>
-                  </button>
-                  <input type="text" class="form-control text-end" placeholder="" value="1">
-                  <button class="btn" type="button"><i class="bi bi-plus"></i></button>
-                </div>
-                <!-- 總金額 -->
-                <div class="d-flex text-secondary justify-content-between fs-4">
-                  <p class="inline-block m-0 me-2">$</p>
-                  <p class="inline-block m-0 ">2,000</p>
-                </div>
-              </div>
+        </div>
+        <hr class="border-secondary">
+
+        <!-- 運送方式 -->
+        <div class="w-100 px-3">
+          <h2 class="h4 fw-bolder text-secondary ">運送方式</h2>
+
+          <div class="w-100 p-2 p-sm-4">
+            <div class="form-check py-3">
+              <input class="form-check-input" type="radio" name="transport" id="transport1" required>
+              <label class="form-check-label" for="transport1">
+                黑貓宅配
+              </label>
             </div>
             <hr class="border-secondary">
 
-            <!-- 第四項 -->
-            <div class="w-100 px-0 py-2 p-md-4 d-flex flex-column flex-sm-row justify-content-end row-gap-3">
-              <!-- 項目 -->
-              <div class="d-flex flex-grow-1 flex-column flex-sm-row align-items-center">
-                <!-- 項目圖片 -->
-                <div class="cart-img-box rounded-circle flex-shrink-0">
-                  <img src="./img/cart-img/被子.jpg" class="w-100 img-fluid card-img-top" alt="">
-                </div>
-                <!-- 項目內容 -->
-                <div class="info-text-box flex-grow-1 me-2 me-lg-5 p-2 text-center text-sm-start">
-                  <h5 class="card-title mb-2 fs-5">平面設計-名片設計</h5>
-                  <p class="card-text m-0 pb-1 d-inline-flex text-secondary"># 423456</p>
-                </div>
-              </div>
-
-              <!-- 計算區 -->
-              <div class="quantity-box d-flex align-items-between align-items-sm-center  flex-column flex-sm-row column-gap-4 row-gap-3">
-                <!-- 數量增減 -->
-                <div class="quantity-amount input-group">
-                  <button class="btn" type="button">
-                    <i class="bi bi-dash"></i>
-                  </button>
-                  <input type="text" class="form-control text-end" placeholder="" value="1">
-                  <button class="btn" type="button"><i class="bi bi-plus"></i></button>
-                </div>
-                <!-- 總金額 -->
-                <div class="d-flex text-secondary justify-content-between fs-4">
-                  <p class="inline-block m-0 me-2">$</p>
-                  <p class="inline-block m-0 ">2,100</p>
-                </div>
-              </div>
+            <div class="form-check py-3">
+              <input class="form-check-input" type="radio" name="transport" id="transport2">
+              <label class="form-check-label" for="transport2">
+                超商店到店
+              </label>
             </div>
           </div>
         </div>
@@ -305,16 +217,15 @@
 
         <!-- 案扭區 -->
         <div class="w-100 pt-3 d-flex justify-content-between">
-          <a href="#" class="py-2 fs-5 fw-semibold link-dark link-opacity-50-hover text-decoration-none"><i
-              class="bi bi-arrow-left-short"></i>返回購物</a>
-          
-            <a href="./practice-web-cart-2.html"
+          <a href="./practice-web-cart-1.html"
+            class="py-2 fs-5 fw-semibold link-dark link-opacity-50-hover text-decoration-none"><i
+              class="bi bi-arrow-left-short"></i>上一頁</a>
+            <a href="./practice-web-cart-3.html"
               class="text-decoration-none text-dark">
               <button type="button" class="btn btn-warning px-5 py-2 fs-5 fw-semibold">
                 下一步
               </button>
             </a>
-          </button>
         </div>
     </form>
 
@@ -414,16 +325,16 @@
         </div>
       </div>
     </div>
-    <div class="text-bg-secondary">
+    <div class="text-secondary bg-secondary-subtle">
       <div class="container-xxl py-2 d-flex flex-column flex-sm-row justify-content-between align-items-center">
         <p class="mb-2 mb-sm-0 fs-6">©2025 Norphen.studio — <a href="#"
-            class="link-light  link-underline-opacity-0 link-offset-3 link-underline-opacity-75-hover link-opacity-75-hover ">@Norphen</a>
+            class="link-secondary  link-underline-opacity-0 link-offset-3 link-underline-opacity-75-hover link-opacity-75-hover ">@Norphen</a>
         </p>
         <ul class="navbar-nav d-flex flex-row gap-3 fs-5">
-          <li><a href="#" class="link-light"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#" class="link-light"><i class="bi bi-twitter-x"></i></a></li>
-          <li><a href="#" class="link-light"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#" class="link-light"><i class="bi bi-telegram"></i></a></li>
+          <li><a href="#" class="link-secondary"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#" class="link-secondary"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="#" class="link-secondary"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#" class="link-secondary"><i class="bi bi-telegram"></i></a></li>
         </ul>
       </div>
     </div>
