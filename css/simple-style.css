@@ -1,4 +1,5 @@
-html , body {
+html,
+body {
   height: 100%;
 }
 
@@ -15,8 +16,66 @@ footer li {
   list-style-type: none;
 }
 
+.carousel-inner {
+  aspect-ratio: 21/9;
+}
+@media (max-width:768px) {
+  .carousel-inner {
+  aspect-ratio: 4/3;
+}
+}
+
 footer .footer-info li::before {
   content: "-";
   font-weight: bold;
 }
 
+.servise-img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.map-box iframe {
+  height: 450px;
+}
+
+.remark {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin: 5px 0;
+}
+
+@media (max-width:768px) {
+  .map-box iframe {
+    height: 600px;
+  }
+}
+
+.small-table {
+  font-size: 0.7rem;
+}
+
+.icon-box {
+  width: 120px;
+  height: 120px;
+}
+
+.btn-check[name="color-select"]:checked+.btn {
+  border-width: 2px;
+  border-color: #FFF;
+  box-shadow: 0px 0px 3px black;
+}
+
+.btn-check:checked+.btn.add-like {
+  background-color: rgb(255, 206, 206) !important;
+  border-color: transparent;
+  color: rgb(255, 75, 75) !important;
+}
+
+/* =============================================  */
+.login-img {
+  object-fit: cover;       /* 填滿容器，維持比例，超出會裁切 */
+  object-position: center; /* 圖片置中對齊 */
+  display: block;
+}
