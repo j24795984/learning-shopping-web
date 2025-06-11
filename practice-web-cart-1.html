@@ -446,7 +446,7 @@
 
     minusBtn.forEach(function (item, index) {
       item.addEventListener('click', function () {
-        if ((Number(countValue[index].value) - 1) == 0) {
+        if ((Number(countValue[index].value) - 1) <= 0) {
           countValue[index].value = 1;
         } else {
           countValue[index].value = Number(countValue[index].value) - 1;
@@ -462,6 +462,7 @@
 
     countValue.forEach(function (item, index) {
       item.addEventListener('change', function () {
+        countValue[index].value = Math.ceil(Number(countValue[index].value));
         if (Number(item.value) < 1) {
           item.value = 1;
         }
